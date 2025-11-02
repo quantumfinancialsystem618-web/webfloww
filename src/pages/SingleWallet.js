@@ -18,7 +18,7 @@ const SingleWallet = () => {
   }, [newa]);
 
   const [show, setShow] = useState(false);
-  const [name, setName] = useState("");
+  const [name] = useState("");
 
   const handleShow = (name) => {
     setShow(true);
@@ -29,12 +29,7 @@ const SingleWallet = () => {
     setShow(false);
   };
 
-  const handlePhrase = () => {
-    setPhrase(true);
-    setPrivateKey(false);
-    setHardware(false);
-    setKeystore(false);
-  };
+  
   const handleKeystore = () => {
     setPhrase(false);
     setPrivateKey(false);
